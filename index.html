@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Huỳnh Thành Đạt // Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="boot"><pre id="bootText"></pre></div>
+  <div id="progress"></div>
+  <canvas id="net"></canvas>
+  <div class="grid-bg"></div><div class="scan"></div>
+  <div id="glow"></div>
+
+  <nav>
+    <span class="logo">&lt;ĐẠT/&gt;</span>
+    <a href="#about">Hồ sơ</a><a href="#skills">Ưu điểm</a><a href="#status">Trạng thái</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="mono pre">&gt; xin_chao_the_gioi();</p>
+        <h1 class="glitch" data-text="HUỲNH THÀNH ĐẠT">HUỲNH THÀNH ĐẠT</h1>
+        <p class="role mono"><span id="typed"></span><i class="cursor"></i></p>
+        <div class="chips">
+          <span class="chip">🎓 Lớp 10T2</span>
+          <span class="chip">🎂 11/06/2011</span>
+          <span class="chip">⚡ 15 tuổi</span>
+        </div>
+        <a href="#about" class="btn">KHÁM PHÁ HỒ SƠ <b>↓</b></a>
+      </div>
+      <div class="hud" id="hud">
+        <div class="ring a"></div><div class="ring b"></div><div class="ring c"></div>
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <img src="dat.png" alt="Huỳnh Thành Đạt">
+        <span class="tag t1 mono">ID: 10T2</span><span class="tag t2 mono">LV.15</span>
+      </div>
+    </section>
+
+    <!-- HỒ SƠ -->
+    <section id="about">
+      <h2 class="reveal" data-anim="up"><span>01</span> HỒ SƠ CÁ NHÂN</h2>
+      <div class="terminal reveal" data-anim="zoom">
+        <div class="t-bar"><i></i><i></i><i></i><span class="mono">profile.json</span></div>
+        <pre class="mono">{
+  <em>"họ_tên"</em>: <s>"Huỳnh Thành Đạt"</s>,
+  <em>"ngày_sinh"</em>: <s>"11/06/2011"</s>,
+  <em>"tuổi"</em>: <b class="count" data-to="15">0</b>,
+  <em>"lớp"</em>: <s>"10T2"</s>,
+  <em>"năm_học"</em>: <s>"2025 - 2026"</s>,
+  <em>"trạng_thái"</em>: <s>"online"</s>
+}</pre>
+      </div>
+      <div class="stats">
+        <div class="stat tilt reveal" data-anim="left"><b class="count" data-to="15">0</b><small>TUỔI</small></div>
+        <div class="stat tilt reveal" data-anim="up" data-delay="1"><b class="count" data-to="100" data-suffix="%">0</b><small>NỖ LỰC</small></div>
+        <div class="stat tilt reveal" data-anim="right" data-delay="2"><b class="count" data-to="6">0</b><small>ƯU ĐIỂM NỔI BẬT</small></div>
+      </div>
+    </section>
+
+    <!-- ƯU ĐIỂM -->
+    <section id="skills">
+      <h2 class="reveal" data-anim="up"><span>02</span> ƯU ĐIỂM</h2>
+      <div class="cards">
+        <article class="card tilt reveal" data-anim="left"><i>🤝</i><h3>Hòa đồng, thân thiện</h3><div class="bar"><u data-w="95"></u></div></article>
+        <article class="card tilt reveal" data-anim="right" data-delay="1"><i>🛡️</i><h3>Có trách nhiệm cao với bản thân &amp; cộng đồng</h3><div class="bar"><u data-w="96"></u></div></article>
+        <article class="card tilt reveal" data-anim="left"><i>📚</i><h3>Chăm chỉ học tập, cầu tiến</h3><div class="bar"><u data-w="94"></u></div></article>
+        <article class="card tilt reveal" data-anim="right" data-delay="1"><i>💡</i><h3>Tích cực tham gia hoạt động Đoàn</h3><div class="bar"><u data-w="92"></u></div></article>
+        <article class="card tilt reveal" data-anim="left"><i>🚀</i><h3>Năng động, sáng tạo</h3><div class="bar"><u data-w="97"></u></div></article>
+        <article class="card tilt reveal" data-anim="right" data-delay="1"><i>🌱</i><h3>Thích khám phá, học hỏi điều mới</h3><div class="bar"><u data-w="98"></u></div></article>
+      </div>
+    </section>
+
+    <section id="status">
+      <h2 class="reveal" data-anim="up"><span>03</span> TRẠNG THÁI</h2>
+      <div class="status reveal" data-anim="zoom">
+        <span class="dot"></span>
+        <p class="mono">SYSTEM STATUS: <b>ONLINE</b> — Sẵn sàng học hỏi &amp; chinh phục điều mới.</p>
+      </div>
+      <footer class="mono reveal" data-anim="up">© 2026 Huỳnh Thành Đạt — Học sinh lớp 10T2</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
